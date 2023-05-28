@@ -4,8 +4,8 @@ const BillBoard = () => {
     const {data:movie} = useBillboard()
     console.log(movie)
   return (
-    <div className=" relative h-[56.25vw]">
-      <video className=" object-cover brightness-50" autoPlay  muted poster={movie?.thumbnailUrl} src={movie?.videoUrl}> </video>
+    <div className=" relative max-h-[56.25vh] ">
+      <video className=" object-cover brightness-50 w-[100vw]  max-h-[56.25vh]" autoPlay  muted poster={movie?.thumbnailUrl} src={movie?.videoUrl}> </video>
       <div className=" absolute ml-4 md:ml-16 top-[30%] lg:top-[40%]">
            <p className="text-white font-bold text-1xl md:text-5xl h-full w-[50%] drop-shadow-xl">
             {movie?.title}
