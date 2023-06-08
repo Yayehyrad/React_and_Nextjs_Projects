@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <div className=''>new text</div>
+        <div className=' text-yellow-300 text-9xl'>new text</div>
       </main>
     </>
   )
